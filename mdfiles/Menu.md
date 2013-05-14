@@ -8,5 +8,7 @@
 
 [Npm Related](index.html?page=NPM.md)
 
-REST tools
-<small>[request](http://github.com/mikeal/request.git)</small>
+HTTP(S) Modules<br/>
+<small>[request module](http://github.com/mikeal/request.git)</small>
+<br/>
+<small>[restify module](http://mcavage.github.com/node-restify)</small>
