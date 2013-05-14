@@ -2,7 +2,6 @@
 
 $(document).ready(function(){
   
-
   $('#md_menu').load(config.md_file_path + '/' + config.menu_page, function(){
     $('#menu').html(htmlUnescape(marked($('#md_menu').html()), mkdOpt));  
   });
@@ -11,8 +10,6 @@ $(document).ready(function(){
   
   if(p && getURLParameter('page').split('#')[0]) {
     p = getURLParameter('page').split('#')[0];
-    $('#pagename').html(p.split('.md')[0]);
-    
     $('#md').load(config.md_file_path + '/' + p, function(){
       $('#page').html(htmlUnescape(marked($('#md').html(), mkdOpt))); 
       $('#page a').each(function(){
@@ -20,10 +17,7 @@ $(document).ready(function(){
       });
     });
 
-    
   } else {
-    $('#pagename').html('Welcome');
-    
     $('#md').load(config.md_file_path + '/' + config.welcome_page, function(){
       $('#page').html(htmlUnescape(marked($('#md').html())));  
     });

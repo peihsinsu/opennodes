@@ -52,3 +52,50 @@ noderiaktools  Backup and restore for node json documents                    =st
 noderpc        A framework for building distributed services with NodeJS     =brstgt =lociii  2011-05-18 09:54  rpc rmi service distributed
 noderpt        Node.js Report Utility                                        =peihsinsu       2013-03-29 01:26  report
 ```
+
+## 檢視套件詳細設定(package.json)
+使用npm show可以列出該套件的詳細資訊，大部分資訊記錄於套件底下的package.json，另外有包含程式上版的資訊喔！下面是執行範例，其中time欄位就是個版本publish的時間：
+```
+# npm show noder
+npm http GET https://registry.npmjs.org/noder
+npm http 304 https://registry.npmjs.org/noder
+
+{ name: 'noder',
+  description: 'Node.js Simple Web Utility',
+  'dist-tags': { latest: '0.0.6' },
+  versions:
+   [ '0.0.1',
+     '0.0.2',
+     '0.0.3',
+     '0.0.4',
+     '0.0.5',
+     '0.0.6' ],
+  maintainers: 'peihsinsu <simonsu.mail@gmail.com>',
+  time:
+   { '0.0.1': '2013-03-29T02:13:21.133Z',
+     '0.0.2': '2013-04-07T18:28:47.124Z',
+     '0.0.3': '2013-05-04T11:06:21.644Z',
+     '0.0.4': '2013-05-04T11:24:01.389Z',
+     '0.0.5': '2013-05-13T13:54:20.591Z',
+     '0.0.6': '2013-05-13T15:37:19.113Z' },
+  author: 'Simon Su <simonsu.mail@gmail.com>',
+  repository:
+   { type: 'git',
+     url: 'https://github.com/peihsinsu/noder' },
+  version: '0.0.6',
+  contributors: 'Simon Su <simonsu.mail@gmail.com>',
+  dependencies:
+   { underscore: '*',
+     log4js: '*',
+     commander: '*' },
+  keywords: [ 'http', 'server', 'web' ],
+  main: 'index',
+  engines: { node: '>= 0.8.0' },
+  directories: { bin: './bin', lib: './lib' },
+  optionalDependencies: {},
+  bin: { nhelp: 'bin/nhelp', noder: 'bin/noder' },
+  readmeFilename: 'README.md',
+  dist:
+   { shasum: '1b7df135f2ac6a3ff1253105dab66fd634bf5cc0',
+     tarball: 'http://registry.npmjs.org/noder/-/noder-0.0.6.tgz' } }
+```
