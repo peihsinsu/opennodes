@@ -9,6 +9,6 @@
 [Npm Related](index.html?page=NPM.md)
 
 HTTP(S) Modules<br/>
-<small>[request module](http://github.com/mikeal/request.git)</small>
+<small>[request module](index.html?page=request.md)</small>
 <br/>
-<small>[restify module](http://mcavage.github.com/node-restify)</small>
+<small>[restify module](index.html?page=restify.md)</small>

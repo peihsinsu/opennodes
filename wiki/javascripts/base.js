@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
   
   $('#md_menu').load(config.md_file_path + '/' + config.menu_page, function(){
@@ -12,12 +10,43 @@ $(document).ready(function(){
     p = getURLParameter('page').split('#')[0];
     $('#md').load(config.md_file_path + '/' + p, function(){
       $('#page').html(htmlUnescape(marked($('#md').html(), mkdOpt))); 
+      
       $('#page a').each(function(){
         $(this).append('<img width="15px" src="images/link.png"/>');
       });
+
+      $('.github').each(function(v){
+        $('#tmp').load(npm, function(){
+          $('#gitpage').html(htmlUnescape(marked($('#tmp').html(), mkdOpt))); 
+        });
+
+        $(this).click(function(){
+          $.blockUI({ 
+            message: $('#gitpage'), 
+            onOverlayClick: $.unblockUI,
+            css: { 
+              border: 'none', 
+              padding: '15px', 
+              opacity: .8, 
+              color: '#fff', 
+              top:  "30px",
+              left: ($(window).width() - 810) /2 + 'px', 
+              width: '810px'
+            }
+          }); 
+        });
+      });
+
+      $('.code').each(function(v){
+        var path = $(this).attr('data-js');
+        $(this).load('../examples/'+path);
+        $(this).before('<h3>See: <a href="/examples/'+path+'">/examples/'+path+'</a></h3>');
+      });
+
     });
 
   } else {
+    if($('#md'))
     $('#md').load(config.md_file_path + '/' + config.welcome_page, function(){
       $('#page').html(htmlUnescape(marked($('#md').html())));  
     });
@@ -52,7 +81,6 @@ $(document).ready(function(){
     var new_url = 'https://github.com/' + config.user + '/' + config.project + '/new/gh-pages';
     window.open(edit_url);
   });
-
 
 });
 
