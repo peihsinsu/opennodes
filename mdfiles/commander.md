@@ -1,7 +1,7 @@
 commander
 ===
 
-request是一套實作http/https模組的http(s) client module，透過該套件可以快速的進行
+commander是一套讓建立Node.js CLI(Command Line Interface)更快速的方法，讓使用者可以更快速且更彈性的抓取command line的參數，也提供預設的help page，讓需要寫指令模式的開發者更方便！
 
 ## 套件資訊
 
@@ -15,8 +15,16 @@ npm install request
 
 ## Sample Usage
 
-<pre class="code" data-js="request/sample01.js"></pre>
+<pre class="code" data-js="commander/test-commander.js"></pre>
 
-<pre class="code" data-js="request/sample02.js"></pre>
+Result:
+```
+# node examples/commander/test-commander.js
+you ordered a pizza with:
+  - marble cheese
 
-<pre class="code" data-js="request/sample03.js"></pre>
+# node examples/commander/test-commander.js -P 123
+you ordered a pizza with:
+  - pineappe
+  - marble cheese
+```

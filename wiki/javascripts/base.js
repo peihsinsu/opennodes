@@ -69,7 +69,7 @@ $(document).ready(function(){
             var _html = '<ul>';
             for(var i = 0 ; i < _show.length ; i++) {
               if(data[_show[i]])
-              _html += '<li>' + _show[i] + ' : ' + (typeof(data[_show[i]]) == 'object' ? json2ul(data[_show[i]]) : data[_show[i]] )  + '</li>';
+              _html += '<li>' + _show[i] + ' : ' + (typeof(data[_show[i]]) == 'object' ? json2ul(data[_show[i]]) : format(data[_show[i]]) )  + '</li>';
             }
             _html += '</ul>';
             _this.html(_html);
@@ -169,9 +169,19 @@ function json2ul(json) {
   var _html = '<ul>';
   var keys = Object.keys(json);
   for(var i = 0; i<keys.length ; i++) {
-    _html += '<li>' + keys[i] + ' : ' + ( typeof(json[keys[i]]) == 'Object' ? json2ul(json[keys[i]]) : json[keys[i]] ) + '</li>';
+    _html += '<li>' + keys[i] + ' : ' + ( typeof(json[keys[i]]) == 'Object' ? json2ul(json[keys[i]]) : format(json[keys[i]]) ) + '</li>';
   }
   _html += '</ul>';
   return _html;
+}
+
+function format(txt) {
+  if (txt.indexOf('http://') == 0 || txt.indexOf('https://') == 0) {
+    return '<a href="' + txt + '">' + txt + '</a>';
+  } else if (txt.indexOf('git://') == 0) {
+    return '<a href="' + txt.replace(/git/,'https') + '">' + txt + '</a>';
+  } else {
+    return txt;
+  }
 }
 
