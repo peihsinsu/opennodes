@@ -25,6 +25,8 @@ Web Framework<br/>
 
 Network<br/>
 <small>[domain](index.html?page=domain.md)</small>,
+<small>[native-dns](index.html?page=native-dns.md)</small>,
+<small>[nodemailer](index.html?page=nodemailer.md)</small>,
 
 Utility<br/>
 <small>[json](index.html?page=json.md)</small>,
