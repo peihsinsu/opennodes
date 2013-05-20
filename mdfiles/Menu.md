@@ -12,8 +12,8 @@ HTTP(S) Modules<br/>
 <small>[request](index.html?page=request.md)</small>,
 <small>[restify](index.html?page=restify.md)</small>,
 <small>[restClient](index.html?page=restClient.md)</small>,
-<small>[connect](index.html?page=connect.md)</small>
-
+<small>[connect](index.html?page=connect.md)</small>,
+<small>[soap](index.html?page=soap.md)</small>
 
 Async Modules<br/>
 <small>[step](index.html?page=step.md)</small>,
