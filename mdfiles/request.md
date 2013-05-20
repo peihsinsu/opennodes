@@ -3,9 +3,9 @@ request module
 
 request是一套實作http/https模組的http(s) client module，透過該套件可以快速的進行
 
-## Github Repository
+## 套件資訊
 
-[README.md](index.html?page=../node_modules/request/README.md)
+<div class="pkginfo" data-module-name="request" data-show="version,dependencies"></div>
 
 ## Installation
 

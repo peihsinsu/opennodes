@@ -15,6 +15,7 @@ $(document).ready(function(){
         $(this).append('<img width="15px" src="images/link.png"/>');
       });
 
+      //TODO: still not used
       $('.github').each(function(v){
         $('#tmp').load(npm, function(){
           $('#gitpage').html(htmlUnescape(marked($('#tmp').html(), mkdOpt))); 
@@ -37,10 +38,39 @@ $(document).ready(function(){
         });
       });
 
+      /**
+       * 載入example目錄裝對應的js程式碼
+       * 範例：<pre class="code" data-js="request/sample01.js"></pre>
+       */
       $('.code').each(function(v){
         var path = $(this).attr('data-js');
         $(this).load('../examples/'+path);
-        $(this).before('<h3>See: <a href="/examples/'+path+'">/examples/'+path+'</a></h3>');
+        $(this).before('<h3>See:<a href="/examples/'+path+'">/examples/'+path+'</a></h3>');
+      });
+
+      /**
+       * 載入package.json內容
+       * 範例：<div class="pkginfo" data-module-name="request" data-show="version,dependencies"></div>
+       */
+      $('.pkginfo').each(function(v){
+        var _this = $(this);
+        var _module_name = _this.attr('data-module-name');
+        if(_this.attr('data-show')){
+          var _show = _this.attr('data-show').split(',');
+          _show.push('info');
+          _show.push('readme');
+          $.getJSON('../node_modules/' + _module_name + '/package.json', function(data) {
+            data.info = '<a href="../node_modules/' + _module_name +'/package.json">參考自套件package.json</a>';
+            data.readme = '<a href="index.html?page=../node_modules/' + _module_name + '/README.md">README.md</a>';
+            var _html = '<ul>';
+            for(var i = 0 ; i < _show.length ; i++) {
+              if(data[_show[i]])
+              _html += '<li>' + _show[i] + ' : ' + (typeof(data[_show[i]]) == 'object' ? json2ul(data[_show[i]]) : data[_show[i]] )  + '</li>';
+            }
+            _html += '</ul>';
+            _this.html(_html);
+          });
+        }
       });
 
     });
@@ -128,3 +158,14 @@ function htmlUnescape(value){
         .replace(/&gt;/g, '>')
         .replace(/&amp;/g, '&');
 }
+
+function json2ul(json) {
+  var _html = '<ul>';
+  var keys = Object.keys(json);
+  for(var i = 0; i<keys.length ; i++) {
+    _html += '<li>' + keys[i] + ' : ' + ( typeof(json[keys[i]]) == 'Object' ? json2ul(json[keys[i]]) : json[keys[i]] ) + '</li>';
+  }
+  _html += '</ul>';
+  return _html;
+}
+
