@@ -6,7 +6,10 @@
 
 Node.js基礎介紹<br/>
 <small>[Node.js入門](index.html?page=BasicNodeJS.md)</small>,
+<small>[迴圈與判斷](index.html?page=BasicOperation.md)</small>,
+<small>[Node.js與環境](index.html?page=NodeJSEnv.md)</small>,
 <small>[About IO](index.html?page=AboutIO.md)</small>,
+<small>[About Socket](index.html?page=SocketProgramming.md)</small>,
 <small>[學習資源介紹](index.html?page=NodeJSResource.md)</small>,
 
 NPM基礎介紹<br/>

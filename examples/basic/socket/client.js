@@ -1,14 +1,18 @@
 var net = require('net');
 
-var HOST = '211.78.245.85';
+var HOST = 'localost';
 var PORT = 22661;
 
 var client = new net.Socket();
+/**
+ * 使用port與host來設定socket物件
+ */
 client.connect(PORT, HOST, function() {
-
-    console.log('CONNECTED TO: ' + HOST + ':' + PORT);
-    // Write a message to the socket as soon as the client is connected, the server will receive it as message from the client
-    client.write('I am Chuck Norris!');
+  //連線時候訊息與操作
+  console.log('CONNECTED TO: ' + HOST + ':' + PORT);
+  // Write a message to the socket as soon as the client is connected, 
+  // the server will receive it as message from the client
+  client.write('I am Chuck Norris!');
 
 });
 

@@ -1,18 +1,13 @@
 var fs = require('fs');
-var fileName='/etc/hosts';
+var path='/etc/hosts';
 
-var s = process.binding('fs').stat(fileName);
+/**
+ * 建立stat物件
+ */
+var s = fs.statSync(path);
+//另一種建立方式：process.binding('fs').stat(path);
 
+/**
+ * 檢視stat物件內容
+ */
 console.log(s);
-
-/*
-try {
-  fs.readFileSync(fileName, "utf8");
-} catch (e) {
-
-  if(e.code = 'ENOENT')
-    return false;
-  console.log(e);
-  console.log(JSON.stringify(e));
-}
-*/

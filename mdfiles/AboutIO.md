@@ -12,3 +12,11 @@ fs套件提供讀取檔案系統的一些操作方式，而官方針對操作大
 <pre class="code" data-js="basic/002-readFile.js"></pre>
 
 <pre class="code" data-js="basic/002-deleteFile.js"></pre>
+
+如果是使用沒帶Sync的function，則需要實作callback function來達到操作回傳的內容物件，範例如下：
+
+<pre class="code" data-js="basic/002-readFile2.js"></pre>
+
+另一個好用的function是stat，可以用來檢測某個路徑的檔案或是資料匣的狀態
+
+<pre class="code" data-js="basic/002-testFileExist.js"></pre>
