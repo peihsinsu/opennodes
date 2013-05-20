@@ -17,7 +17,8 @@ HTTP(S) Modules<br/>
 
 Async Modules<br/>
 <small>[step](index.html?page=step.md)</small>,
-<small>[q](index.html?page=q.md)</small>,
+<small>[node-promise](index.html?page=node-promise.md)</small>,
+<small>[q](index.html?page=q.md)</small>
 
 Web Framework<br/>
 <small>[Express](index.html?page=Express.md)</small>,
@@ -41,3 +42,5 @@ MySQL<br/>
 Snippet<br/>
 <small>[cradle](index.html?page=cradle.md)</small>,
 
+CloudAPI<br/>
+<small>[smartdc](index.html?page=smartdc.md)</small>,

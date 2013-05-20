@@ -56,7 +56,11 @@ $(document).ready(function(){
         var _this = $(this);
         var _module_name = _this.attr('data-module-name');
         if(_this.attr('data-show')){
-          var _show = _this.attr('data-show').split(',');
+          //處理package.json中需要顯示的物件
+          var data_show = 'name,version,author,repository,engine,' + _this.attr('data-show');
+          var _show = data_show.split(',');
+          _show = _.union(_show, []);
+
           _show.push('info');
           _show.push('readme');
           $.getJSON('../node_modules/' + _module_name + '/package.json', function(data) {
@@ -69,6 +73,8 @@ $(document).ready(function(){
             }
             _html += '</ul>';
             _this.html(_html);
+          }).fail(function() {
+            _this.html('<font color=red>該套件找不到package.json描述檔案</font>');
           });
         }
       });
