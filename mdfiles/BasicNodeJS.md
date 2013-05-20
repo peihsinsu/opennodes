@@ -63,7 +63,64 @@ nvm install 0.8
 nvm use 0.8
 ```
 
-## 學習資源介紹
+## 基本概念
 
-* NodeJS.tw為台灣官網，提供相當多的學習資源與討論: http://nodejs.tw
-* 由NodeJS.tw官方夥伴編輯的第一本Node.js中文電子書：http://book.nodejs.tw/
+### 跟JS很像的(應該說一樣)基本操作
+
+對於初學JavaScript/Node.js的開發者，尤其是從物件導向語言進入的，特別容易搞錯，記得，function名字不要一樣...
+<pre class="code" data-js="basic/000-duplicateFun.js"></pre>
+
+### 簡述non-block
+non-block簡單的說就像是不等待回應的併行處理方式，但，他又不是multi-process或multi-thread，而是一心二用的執行方式...
+一般non-block的片段有個簡單的判斷方式，就是在一段執行程式中被丟到function中被呼叫的程式，通常就是non-block的程式片段...我們一般稱之為callback function。
+
+<pre class="code" data-js="basic/000-nonblock.js"></pre>
+
+執行結果：
+```
+# node examples/basic/000-nonblock.js
+bar...
+foo...
+```
+<pre class="code" data-js="basic/000-nonblock2.js"></pre>
+
+執行結果：
+```
+node examples/basic/000-nonblock2.js
+foo...
+bar...
+```
+
+<pre class="code" data-js="basic/000-nonblock3.js"></pre>
+
+執行結果：
+```
+# node examples/basic/000-nonblock3.js
+[Mon May 20 2013 17:47:24 GMT+0800 (CST)]Start foo...
+[Mon May 20 2013 17:47:24 GMT+0800 (CST)]End foo...
+[Mon May 20 2013 17:47:24 GMT+0800 (CST)]Start bar...
+[Mon May 20 2013 17:47:24 GMT+0800 (CST)]bar...
+[Mon May 20 2013 17:47:24 GMT+0800 (CST)]End bar...
+[Mon May 20 2013 17:47:25 GMT+0800 (CST)]foo...
+```
+
+下面是setInterval的展示，每三秒執行一次callback，但是在等待這三瞟的同時，下方的"foo..."已經被執行...
+<pre class="code" data-js="basic/000-nonblock4.js"></pre>
+
+執行結果：
+```
+# node examples/basic/000-nonblock4.js
+foo...
+bar...
+bar...
+bar...
+(skip...)
+```
+
+### Node.js的循序
+
+延續剛剛對non-block的自以為是定義，其實一般Node.js的語法還是具備循序的特性，
+
+<pre class="code" data-js="basic/000-sequence.js"></pre>
+
+

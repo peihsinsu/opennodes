@@ -4,9 +4,13 @@
 * [About Me](http://about.me/peihsinsu)
 ---
 
-[Basic Node.js](index.html?page=BasicNodeJS.md)
+Node.js基礎介紹<br/>
+<small>[Node.js入門](index.html?page=BasicNodeJS.md)</small>,
+<small>[About IO](index.html?page=AboutIO.md)</small>,
+<small>[學習資源介紹](index.html?page=NodeJSResource.md)</small>,
 
-[Npm Related](index.html?page=NPM.md)
+NPM基礎介紹<br/>
+<small>[Npm Related](index.html?page=NPM.md)</small>
 
 HTTP(S) Modules<br/>
 <small>[request](index.html?page=request.md)</small>,
