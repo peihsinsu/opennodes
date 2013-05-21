@@ -1,10 +1,10 @@
 var util = require('util')                                                                                                                                
   , cradle = require('cradle')
-  , dbusername = 'micloud'
-  , dbpassword = 'mitac@micloud'
-  , databasename = 'qiz'
-  , db_address = '211.78.254.39'
-  , db_port = 5984
+  , dbusername = 'username' // 填入你的姓名
+  , dbpassword = 'password' // 填入你的密碼
+  , databasename = 'datatable' // 填入你的資料表名稱
+  , db_address = 'db.server.ip.address' //填入你的DB Server位置
+  , db_port = 5984 // 如果不是使用預設port，需要修改
   , db = new(cradle.Connection)('http://' + db_address, db_port, {
     auth: { username: dbusername, password: dbpassword },
     cache: false,
@@ -20,13 +20,13 @@ exports.queryExample = function(id, callback) {
   });
 }
 /*
-ex: sample data: {_id:"simon","_rev":"3-f84647507bd83e29a6deae7c377a74dc","first_name":"simon","last_name":"su"}
+ex: sample data: {_id:"simon","_rev":"3-f84647507bd3e29a6deae7c377a74dc","first_name":"simon","last_name":"su"}
 this.queryExample('simon',function(err, doc){
   ...
 })
 */
 
-//ex: http://211.78.255.23:5984/dns/_design/DESIGN/_view/userDomain
+//ex: http://123.123.123.123:5984/db/_design/DESIGN/_view/datatable
 exports.queryViewExample = function(id, callback) {
   console.log('Query of %s', id);
   db.view( 'domain/userDomain',{key: userid}, function (err, doc) {
