@@ -59,7 +59,9 @@ $ cd ExpressPrj && npm install
 * routes: 預設放置專案中router之位置，並且透過export提供給專案載入使用
 
 修改app.js檔案，增加使用ejs的定義
+
 * 首先修改configure區段：
+
 ```
 app.configure(function(){
   app.set('views', __dirname + '/views');
