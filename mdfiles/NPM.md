@@ -3,7 +3,7 @@ NPM使用
 
 ## 最初的學習 - Help Page
 
-協助頁面可以直接打"npm --help"來顯示可以協助的部份
+想了解NPM的第一個步驟...看看協助頁面，可以直接打"npm --help"來顯示可以協助的部份
 ```
 npm --help
 
@@ -35,8 +35,9 @@ Config info can be viewed via: npm help config
 npm@1.1.65 /usr/local/lib/node_modules/npm
 ```
 
-## Search
-NPM提供關鍵字搜尋功能，可以透過
+## 套件的搜尋
+
+NPM提供指令方式的關鍵字搜尋功能，可以透過在指令列模式透過npm search來達到搜尋套件的目的：
 
 ```
 # npm search noder
@@ -250,3 +251,29 @@ npm help whoami                       script:1
 ————————————————————————————————————————————————————————————————————————————————
 (run with -l or --long to see more context)
 ```
+
+## Npm進階操作-Npm搜尋
+Npm的另一個特異功能就是可以透過一些工具作搜尋，您不用怕在茫茫網海當中，找不到想要的套件...
+
+Npm搜尋指令：npm search <key word>
+
+```
+$ npm search mail
+npm http GET https://registry.npmjs.org/-/all/since?stale=update_after&startkey=1333211345000
+npm http 200 https://registry.npmjs.org/-/all/since?stale=update_after&startkey=1333211345000
+NAME                  DESCRIPTION
+amazon-ses            Simple Amazon SES Mailer
+aws-lib               Extensible Node.js library for the Amazon Web Services API
+baunsu                Library to parse and detect bounced emails
+cloudmailin           cloudmailin testing service
+...(Skip)
+winston-mail2         A mail transport for winston
+```
+
+## Npm網站搜尋：http://search.npmjs.org
+
+您如我有瀏覽器，可以使用Npm提供的網站搜尋工具，進入npm官方網站：http://npmjs.org/ 後，點選下面的Search for Packages鏈結，就可以打開Npm的搜尋頁面。或是直接鍵入搜尋頁面的網址，搜尋頁面的網址為：http://search.npmjs.org 。
+
+當然，您也可以發佈Npm套件，相關的說明...容後再述，可先參考Npm Publish Docs：http://npmjs.org/doc/publish.html
+
+

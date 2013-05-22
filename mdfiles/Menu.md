@@ -48,6 +48,7 @@ CLI tools<br/>
 
 NoSQL<br/>
 <small>[cradle](index.html?page=cradle.md)</small>,
+<small>[riak-js](index.html?page=riak-js.md)</small>,
 
 MySQL<br/>
 <small>[mysql](index.html?page=mysql.md)</small>,
