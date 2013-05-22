@@ -16,10 +16,18 @@
     <div class="wrapper">
       <header>
         <a id="logo" href="../"><img src="images/wikitpage.png"></a>
-        <div align="center">
-          <g:plusone></g:plusone>
+        <div align="left">
+
+          <!-- G+ button -->
+          <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+
+          <!-- Fb like button -->
           <div class="fb-like" data-href="http://peihsinsu.github.io/opennodes" 
-            data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+            data-send="false" data-layout="button_count" data-width="200" data-show-faces="true"></div>
+
+          <!-- Twitter like button -->
+          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+
         </div>
         <p id="menu" style="padding-top:10px"></p>
       </header>
@@ -62,7 +70,14 @@
       ga('send', 'pageview');
     </script>
     <!-- g+ button -->
-    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    <script type="text/javascript">
+      window.___gcfg = {lang: 'zh-TW'};
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
 
     <!-- fb like button -->
     <div id="fb-root"></div>
@@ -73,5 +88,8 @@
       js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=167540740081360";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Twitter like button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </body>
 </html>

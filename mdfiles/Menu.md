@@ -9,7 +9,10 @@ Node.js基礎介紹<br/>
 <small>[迴圈與判斷](index.html?page=BasicOperation.md)</small>,
 <small>[Node.js與環境](index.html?page=NodeJSEnv.md)</small>,
 <small>[FileSystem](index.html?page=AboutIO.md)</small>,
+<small>[Exec](index.html?page=CmdExec.md)</small>,
 <small>[Socket](index.html?page=SocketProgramming.md)</small>,
+<small>[REPL](index.html?page=REPL.md)</small>,
+<small>[Closure](index.html?page=Closure.md)</small>,
 <small>[學習資源介紹](index.html?page=NodeJSResource.md)</small>,
 
 NPM基礎介紹<br/>

@@ -1,9 +1,8 @@
 NPM使用
 ===
 
-# 操作
+## 最初的學習 - Help Page
 
-## Help Page
 協助頁面可以直接打"npm --help"來顯示可以協助的部份
 ```
 npm --help
@@ -54,7 +53,9 @@ noderpt        Node.js Report Utility                                        =pe
 ```
 
 ## 檢視套件詳細設定(package.json)
+
 使用npm show可以列出該套件的詳細資訊，大部分資訊記錄於套件底下的package.json，另外有包含程式上版的資訊喔！下面是執行範例，其中time欄位就是個版本publish的時間：
+
 ```
 # npm show noder
 npm http GET https://registry.npmjs.org/noder
@@ -98,4 +99,154 @@ npm http 304 https://registry.npmjs.org/noder
   dist:
    { shasum: '1b7df135f2ac6a3ff1253105dab66fd634bf5cc0',
      tarball: 'http://registry.npmjs.org/noder/-/noder-0.0.6.tgz' } }
+```
+
+## Npm進階操作-套件描述檔
+
+Npm全名Node Package Management，是一個Node專屬的套件管理工具，每個package都有自己的套件描述檔，該檔案是以json方式編輯，您可以用node view <package name>來檢是該套件的描述檔案，該檔案實際位置是位於套件中根目錄的package.json中，而package.json的由來是由CommonJS Package/1.0的規格書(specification)中開始定義的。下面展示一些取得套件描述的使用方式：
+
+```
+$ npm view mail
+npm http GET https://registry.npmjs.org/mail
+npm http 200 https://registry.npmjs.org/mail
+
+{ name: 'mail',
+  description: 'This SMTP client library for Node.JS helps you send email safely and easily.',
+  'dist-tags': { latest: '0.2.3' },
+  versions: 
+   [ '0.1.0',
+     '0.1.1',
+     '0.2.1',
+     '0.2.2',
+     '0.2.3' ],
+  maintainers: 'weaver <ben@orangesoda.net>',
+  author: 'Ben Weaver <ben@orangesoda.net>',
+  time: 
+   { '0.1.0': '2011-03-28T20:36:45.470Z',
+     '0.1.1': '2011-03-28T20:36:45.470Z',
+     '0.2.1': '2011-03-28T20:36:45.470Z',
+     '0.2.2': '2011-03-28T21:40:23.031Z',
+     '0.2.3': '2011-06-14T20:01:10.032Z' },
+  version: '0.2.3',
+  contributors: [],
+  dependencies: { reparse: '>= 0.1.2' },
+  keywords: 
+   [ 'email',
+     'mail',
+     'message',
+     'address',
+     'smtp',
+     'tls',
+     'auth' ],
+  directories: { lib: './lib' },
+  main: './lib/index',
+  scripts: {},
+  bin: {},
+  engines: { node: '>= 0.4.0' },
+  dist: 
+   { shasum: '1eddfe74bb38d7ebff6211aa903ba6beaf96ec24',
+     tarball: 'http://registry.npmjs.org/mail/-/mail-0.2.3.tgz' },
+  devDependencies: {},
+  optionalDependencies: {} }
+```  
+
+如果想要單看某個屬性的值，可使用npm view <package name> [parameter key]來檢視該屬性值，例如mail套件中有dist的屬性，可以用下面指令取出該屬性之值：
+
+```
+$ npm view mail dist
+npm http GET https://registry.npmjs.org/mail
+npm http 304 https://registry.npmjs.org/mail
+
+{ shasum: '1eddfe74bb38d7ebff6211aa903ba6beaf96ec24',
+  tarball: 'http://registry.npmjs.org/mail/-/mail-0.2.3.tgz' }
+```
+
+而因為繼承了json得特性，npm中可以使用object.parameter的方式，更進階取得該物件中的參數值：
+
+```
+$ npm view mail dist.tarball
+http://registry.npmjs.org/mail/-/mail-0.2.3.tgz
+```
+
+以上這些取值方式，可以很方便的在批次自動化的程式中提供幫助噢！
+
+Npm套件描述檔相關說明文件可以使用npm help json來檢視：
+
+```
+$ npm help json
+
+NPM-JSON(1)                                                        NPM-JSON(1)
+
+NAME
+       npm-json -- Specifics of npm's package.json handling
+
+DESCRIPTION
+       This  document  is  all  you need to know about what's required in your
+       package.json file.  It must be  actual  JSON,  not  just  a  JavaScript
+       object literal.
+
+       A  lot  of  the  behavior described in this document is affected by the
+       config settings described in npm help config.
+
+DEFAULT VALUES
+       npm will default some values based on package contents.
+
+       o   "scripts": {"start": "node server.js"}
+
+           If there is a server.js file in the root of your package, then  npm
+           will default the start command to node server.js.
+
+       o   "scripts":{"preinstall":  "node-waf clean || true; node-waf config-
+           ure build"}
+: ... (Skip)
+```
+
+其他npm package description中的參數也都有支援npm help文件，例如package.json中的bin描述文件如下：
+
+```
+$ npm help bin
+
+NPM-BIN(1)                                                          NPM-BIN(1)
+
+NAME
+       npm-bin -- Display npm bin folder
+
+SYNOPSIS
+       npm bin
+
+DESCRIPTION
+       Print the folder where npm will install executables.
+
+SEE ALSO
+       o   npm help prefix
+
+       o   npm help root
+
+       o   npm help folders
+
+       o   npm help config
+
+                                  March 2012                        NPM-BIN(1)
+(END) 
+```
+
+更多的npm help說明文件，可以使用npm help <key word>來檢視，例如您想要找根script相關的文件，可以透過npm help script來尋找，右邊將會該key word的hits數，可供搜尋的參考：
+
+```
+$ npm help script
+Top hits for "script"
+————————————————————————————————————————————————————————————————————————————————
+npm help scripts                      script:45
+npm help json                         script:23
+npm help config                       script:20
+npm help developers                   script:9
+npm help index                        script:7
+npm help run-script                   script:7
+npm help restart                      script:6
+npm help semver                       script:1
+...(Skip)
+npm help completion                   script:1
+npm help whoami                       script:1
+————————————————————————————————————————————————————————————————————————————————
+(run with -l or --long to see more context)
 ```
