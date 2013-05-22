@@ -231,7 +231,7 @@ SEE ALSO
 (END) 
 ```
 
-更多的npm help說明文件，可以使用npm help <key word>來檢視，例如您想要找根script相關的文件，可以透過npm help script來尋找，右邊將會該key word的hits數，可供搜尋的參考：
+更多的npm help說明文件，可以使用npm help <key word>來檢視，例如您想要找跟script相關的文件，可以透過npm help script來尋找，右邊將會該key word的hits數，可供搜尋的參考：
 
 ```
 $ npm help script
