@@ -13,6 +13,7 @@ Node.js基礎介紹<br/>
 <small>[Socket](index.html?page=SocketProgramming.md)</small>,
 <small>[REPL](index.html?page=REPL.md)</small>,
 <small>[Closure](index.html?page=Closure.md)</small>,
+<small>[JSON操作](index.html?page=JsonOperate.md)</small>,
 <small>[學習資源介紹](index.html?page=NodeJSResource.md)</small>,
 
 NPM基礎介紹<br/>
