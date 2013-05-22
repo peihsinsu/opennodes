@@ -16,6 +16,11 @@
     <div class="wrapper">
       <header>
         <a id="logo" href="../"><img src="images/wikitpage.png"></a>
+        <div align="center">
+          <g:plusone></g:plusone>
+          <div class="fb-like" data-href="http://peihsinsu.github.io/opennodes" 
+            data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+        </div>
         <p id="menu" style="padding-top:10px"></p>
       </header>
       <section>
@@ -55,7 +60,18 @@
 
       ga('create', 'UA-41073503-1', 'peihsinsu.github.io');
       ga('send', 'pageview');
-
     </script>
+    <!-- g+ button -->
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+    <!-- fb like button -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=167540740081360";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
   </body>
 </html>
