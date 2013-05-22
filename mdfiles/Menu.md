@@ -42,6 +42,8 @@ Network<br/>
 Utility<br/>
 <small>[json](index.html?page=json.md)</small>,
 <small>[underscore](index.html?page=underscore.md)</small>,
+<small>[node-uuid](index.html?page=node-uuid.md)</small>,
+<small>[noder](index.html?page=noder.md)</small>,
 
 CLI tools<br/>
 <small>[commander](index.html?page=commander.md)</small>,

@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+var fs = require('fs')
+  , p = require('commander')
+  , ver = '0.0.1';
+
+p.version(ver)
+  .option('-p, --package', 'Generate dependency document for package.json')
+  .parse(process.argv);
+
+if(p.package) 
+try {
+  var src = fs.readFileSync('./package.json');
+  var srcObj = JSON.parse(src);
+  var ms = fs.readdirSync('./node_modules');
+  ms.forEach(function(v, i){
+    var pkg = fs.readFileSync('./node_modules/' + v + '/package.json');
+    if(pkg) {
+      var def = JSON.parse(pkg);
+      srcObj.dependencies[def.name] = def.version;
+    }
+  });
+  console.log(JSON.stringify(srcObj));
+} catch(e) {
+  if(e && e.code == 'ENOENT') {
+    console.log('Error ' + e.syscall + ' ' + e.path);
+  } else {
+    console.log(e);
+  }
+}
+else
+  console.log('Error parameters, please use "npmp --help" for help');
