@@ -69,7 +69,7 @@ function toRss(treeCfg, feedsFilePath, feedCfg, mdfilefolder, tpl){
         // Convert and append the data to feeds
         addRss(node.name, 
           content,
-          site + '/index.html?page=' + node.link,
+          site + '/wiki/index.html?page=' + node.link,
           filestat.mtime);
       }
     }
