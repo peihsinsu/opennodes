@@ -82,7 +82,7 @@ function toRss(treeCfg, feedsFilePath, feedCfg, mdfilefolder, tpl){
       description: descript,
       url: url, // link to the item
       guid: url, // optional - defaults to url
-      author: Author || 'MiCloud', // optional - defaults to feed author property
+      author: Author || 'Simon Su', // optional - defaults to feed author property
       date: filedate || new Date() // any format that js Date can parse.
     });
   }
