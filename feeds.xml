@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Opennodes RSS]]></title><description><![CDATA[Feeds for opennodes]]></description><link>http://peihsinsu.github.io/opennodes</link><image><url>http://peihsinsu.github.io/opennodes/icon.png</url><title>Opennodes RSS</title><link>http://peihsinsu.github.io/opennodes</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Sun, 26 May 2013 13:27:02 GMT</lastBuildDate><atom:link href="http://peihsinsu.github.io/opennodes/feeds.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Node.js入門]]></title><description><![CDATA[<h1>Basic Node.js</h1>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Opennodes RSS]]></title><description><![CDATA[Feeds for opennodes]]></description><link>http://peihsinsu.github.io/opennodes</link><image><url>http://peihsinsu.github.io/opennodes/icon.png</url><title>Opennodes RSS</title><link>http://peihsinsu.github.io/opennodes</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Sun, 26 May 2013 13:30:33 GMT</lastBuildDate><atom:link href="http://peihsinsu.github.io/opennodes/feeds.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Node.js入門]]></title><description><![CDATA[<h1>Basic Node.js</h1>
 <p>隨著Node.js的普及，Node.js的教學已經有許多，不論是文章還是電子書，甚至實體書... 本網站學習的目的不在打好Node.js的基礎，而是在分享與介紹常用的各類套件，因此這邊只稍微提一下一些基礎的概念，目的不在求入門的初學者可以快速學會，而是在給寫很久卻迷惘的開發者一個重新複習的機會。</p>
 <h2>Install Node</h2>
 <p>目前Node.js提供各種版本的實作品，並且提供source code讓高手進行compile的動作，大家可以在這個網址找到相關的安裝程式：</p>
@@ -77,7 +77,7 @@ bar...
 <pre class="code" data-js="basic/000-sequence.js"></pre>
 
 
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=BasicNodeJS.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=BasicNodeJS.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 10:06:16 GMT</pubDate></item><item><title><![CDATA[迴圈與判斷]]></title><description><![CDATA[<h1>迴圈與判斷</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=BasicNodeJS.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=BasicNodeJS.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 10:06:16 GMT</pubDate></item><item><title><![CDATA[迴圈與判斷]]></title><description><![CDATA[<h1>迴圈與判斷</h1>
 <h2>for迴圈的用法</h2>
 <pre class="code" data-js="basic/003-for2.js"></pre>
 
@@ -96,7 +96,7 @@ bar...
 <pre class="code" data-js="basic/003-switch.js"></pre>
 
 <h2>while loop</h2>
-<pre class="code" data-js="basic/003-while.js"></pre>]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=BasicOperation.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=BasicOperation.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 13:25:30 GMT</pubDate></item><item><title><![CDATA[Node.js與環境]]></title><description><![CDATA[<h1>Node.js與環境</h1>
+<pre class="code" data-js="basic/003-while.js"></pre>]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=BasicOperation.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=BasicOperation.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 13:25:30 GMT</pubDate></item><item><title><![CDATA[Node.js與環境]]></title><description><![CDATA[<h1>Node.js與環境</h1>
 <h2>從環境讀取變數</h2>
 <pre class="code" data-js="basic/002-readFromEnv.js"></pre>
 
@@ -110,7 +110,7 @@ No input param
 
 # node examples/basic/002-readParameter.js 123
 123</code></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=NodeJSEnv.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=NodeJSEnv.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 13:32:20 GMT</pubDate></item><item><title><![CDATA[FileSystem]]></title><description><![CDATA[<h1>跟IO有關的官方套件</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=NodeJSEnv.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=NodeJSEnv.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 13:32:20 GMT</pubDate></item><item><title><![CDATA[FileSystem]]></title><description><![CDATA[<h1>跟IO有關的官方套件</h1>
 <h2>fs套件</h2>
 <p>fs套件提供讀取檔案系統的一些操作方式，而官方針對操作大多實作了有帶Sync跟沒帶Sync的兩個版本，其中有Sync的function都是屬於同步的操作方式，可以直接回傳值回來，而沒有Sync的function則是會有callback，在callback中接入回傳值，同時也帶入error訊息供判斷。</p>
 <pre class="code" data-js="basic/001-readdir.js"></pre>
@@ -126,7 +126,7 @@ No input param
 
 <p>另一個好用的function是stat，可以用來檢測某個路徑的檔案或是資料匣的狀態</p>
 <pre class="code" data-js="basic/002-testFileExist.js"></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=AboutIO.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=AboutIO.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 13:11:38 GMT</pubDate></item><item><title><![CDATA[Exec]]></title><description><![CDATA[<h1>exec</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=AboutIO.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=AboutIO.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 13:11:38 GMT</pubDate></item><item><title><![CDATA[Exec]]></title><description><![CDATA[<h1>exec</h1>
 <p>下面為使用Node對系統下指令的方式：</p>
 <pre><code>// http://nodejs.org/api.html#_child_processes
 var sys = require(&#39;sys&#39;)
@@ -146,9 +146,9 @@ var sys = require(&#39;sys&#39;)
 var exec = require(&#39;child_process&#39;).exec;
 function puts(error, stdout, stderr) { sys.puts(stdout) }
 exec(&quot;ls -la&quot;, puts);</code></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=CmdExec.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=CmdExec.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 05:56:51 GMT</pubDate></item><item><title><![CDATA[Socket]]></title><description><![CDATA[<h1>Socket Programming</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=CmdExec.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=CmdExec.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 05:56:51 GMT</pubDate></item><item><title><![CDATA[Socket]]></title><description><![CDATA[<h1>Socket Programming</h1>
 <p>Node.js除了Web上的應用，其針對Socket的支援也相當亮眼...</p>
-<pre class="code" data-js="basic/socket/client.js"></pre>]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=SocketProgramming.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=SocketProgramming.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 13:37:02 GMT</pubDate></item><item><title><![CDATA[REPL]]></title><description><![CDATA[<h1>Read-Eval-Print-Loop (REPL)</h1>
+<pre class="code" data-js="basic/socket/client.js"></pre>]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=SocketProgramming.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=SocketProgramming.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 13:37:02 GMT</pubDate></item><item><title><![CDATA[REPL]]></title><description><![CDATA[<h1>Read-Eval-Print-Loop (REPL)</h1>
 <p>REPL，全稱：Read-Eval-Print-Loop，關於Node.js的REPL進階應用部份，借用官方網站Documents內的一段程式碼來說明。<br>REPL是一個直譯式互動執行的介面，透過這個介面，您可以打入任何Node.js的程式碼，視窗將在按下Enter時候回覆執行結果。許多腳本語言都有提供類似介面供開發人員測試或執行簡單的程式碼。<br>在此範例中，將會啓動一個Unix的Socket服務端口、一個TCP Socket的服務端口，並在執行視窗也開啓一個stdin的服務窗口，從這三個地方執行的Node程式片斷，都會反應在原執行視窗上...</p>
 <pre><code>var net = require(&quot;net&quot;),
     repl = require(&quot;repl&quot;);
@@ -188,7 +188,7 @@ node via Unix socket&gt;</code></pre>
 <p>原執行視窗(Server)的回應:</p>
 <pre><code>$ node test.js 
 node via stdin&gt; hello</code></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=REPL.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=REPL.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 06:03:51 GMT</pubDate></item><item><title><![CDATA[Closure]]></title><description><![CDATA[<h1>Closure</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=REPL.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=REPL.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 06:03:51 GMT</pubDate></item><item><title><![CDATA[Closure]]></title><description><![CDATA[<h1>Closure</h1>
 <p>引用良葛葛的一段Closure定義：</p>
 <p>所謂的Closure，是指一個函式物件（或函式值）在建立時，綁定了當時作用範圍（Scope）下有效的自由變數（Free variable）。所 以支援Closure的語言，必須有支援一級函式（First-class function），建立函式物件並不等於建立Closure，建立函式物件時同時綁定了某個（些）自由變數，該函式物件才稱之為Closure。</p>
 <p>下面一個簡單的範例：</p>
@@ -228,7 +228,7 @@ foo(function(x,y){
 <p>列印結果：</p>
 <pre><code>$node test.js
 Result:3</code></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=Closure.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=Closure.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 05:58:24 GMT</pubDate></item><item><title><![CDATA[JSON操作]]></title><description><![CDATA[<h1>JSON的操作</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=Closure.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=Closure.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 05:58:24 GMT</pubDate></item><item><title><![CDATA[JSON操作]]></title><description><![CDATA[<h1>JSON的操作</h1>
 <h2>基本語法與概念</h2>
 <p>JSON全名為JavaScript Object Notation，其原意是要使用純文字的方式來取代物件導向中的物件，整個JSON物件除基本型別之外分成兩種格式：物件、陣列，其中物件語法結構如下：</p>
 <p><img src="http://json.org/object.gif"/></p>
@@ -313,7 +313,7 @@ dbo[process.argv[2]]();</code></pre>
 //則程式可以這樣呼叫
 System.out.println(&#39;HELLO!&#39;);</code></pre>
 <p>語意的部份，見仁見智，一般好解讀的程式會更吸引開發者使用喔！</p>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=JsonOperate.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=JsonOperate.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 15:37:07 GMT</pubDate></item><item><title><![CDATA[學習資源介紹]]></title><description><![CDATA[<h1>學習資源介紹</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=JsonOperate.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=JsonOperate.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 15:37:07 GMT</pubDate></item><item><title><![CDATA[學習資源介紹]]></title><description><![CDATA[<h1>學習資源介紹</h1>
 <h2>官方網站</h2>
 <ul>
 <li>NodeJS官網，提供作者的教學與原廠文件資訊: <a href="http://nodejs.org">http://nodejs.org</a></li>
@@ -334,7 +334,7 @@ System.out.println(&#39;HELLO!&#39;);</code></pre>
 <li>小爪哇的初發(JavaScript相關)：<a href="http://ace33022.blogspot.com/2010/10/javascript.html">http://ace33022.blogspot.com/2010/10/javascript.html</a></li>
 <li>Javascript Kit: <a href="http://www.javascriptkit.com/javatutors/rfunction2.shtml">http://www.javascriptkit.com/javatutors/rfunction2.shtml</a></li>
 </ul>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=NodeJSResource.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=NodeJSResource.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 10:11:24 GMT</pubDate></item><item><title><![CDATA[request]]></title><description><![CDATA[<h1>request module</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=NodeJSResource.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=NodeJSResource.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 10:11:24 GMT</pubDate></item><item><title><![CDATA[request]]></title><description><![CDATA[<h1>request module</h1>
 <p>request是一套實作http/https模組的http(s) client module，透過該套件可以快速的進行</p>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="request" data-show="version,dependencies"></div>
@@ -347,15 +347,15 @@ System.out.println(&#39;HELLO!&#39;);</code></pre>
 <pre class="code" data-js="request/sample02.js"></pre>
 
 <pre class="code" data-js="request/sample03.js"></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=request.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=request.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 13:40:21 GMT</pubDate></item><item><title><![CDATA[restify]]></title><description><![CDATA[<h1>restify module</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=request.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=request.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 13:40:21 GMT</pubDate></item><item><title><![CDATA[restify]]></title><description><![CDATA[<h1>restify module</h1>
 <h2>Github Repository</h2>
 <p><a href="http://mcavage.github.com/node-restify">http://mcavage.github.com/node-restify</a></p>
 <h2>Installation</h2>
 <pre><code>npm install restify</code></pre>
 <h2>Sample Usage</h2>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=restify.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=restify.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 02:53:32 GMT</pubDate></item><item><title><![CDATA[restClient]]></title><description><![CDATA[<h1>restClient</h1>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=restClient.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=restClient.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Sat, 25 May 2013 05:39:00 GMT</pubDate></item><item><title><![CDATA[connect]]></title><description><![CDATA[<h1>connect</h1>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=connect.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=connect.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Sat, 25 May 2013 05:39:19 GMT</pubDate></item><item><title><![CDATA[soap]]></title><description><![CDATA[<h1>soap</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=restify.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=restify.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 02:53:32 GMT</pubDate></item><item><title><![CDATA[restClient]]></title><description><![CDATA[<h1>restClient</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=restClient.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=restClient.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Sat, 25 May 2013 05:39:00 GMT</pubDate></item><item><title><![CDATA[connect]]></title><description><![CDATA[<h1>connect</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=connect.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=connect.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Sat, 25 May 2013 05:39:19 GMT</pubDate></item><item><title><![CDATA[soap]]></title><description><![CDATA[<h1>soap</h1>
 <p>這個套件是Node.js提供來連接SOAP Web Service的</p>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="soap" data-show="version,dependencies"></div>
@@ -371,7 +371,7 @@ System.out.println(&#39;HELLO!&#39;);</code></pre>
 <p>Result:</p>
 <pre><code># node examples/soap/sample02.js
 { Result: &#39;0&amp;success&amp;338658&#39; }</code></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=soap.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=soap.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 08:50:13 GMT</pubDate></item><item><title><![CDATA[step]]></title><description><![CDATA[<h1>step module</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=soap.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=soap.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 08:50:13 GMT</pubDate></item><item><title><![CDATA[step]]></title><description><![CDATA[<h1>step module</h1>
 <p>step模組是Node.js使用來達成循序操縱的一個方式，使用的操作方式較為直覺，唯一需要注意的地方是function內的參數scope及其傳遞的方式。</p>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="step" data-show="version,dependencies"></div>
@@ -383,7 +383,7 @@ System.out.println(&#39;HELLO!&#39;);</code></pre>
 <pre class="code" data-js="step/test-step.js"></pre>
 
 <p>有Callback的時候，也可以順利的執行</p>
-<pre class="code" data-js="step/test-step2.js"></pre>]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=step.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=step.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 03:46:37 GMT</pubDate></item><item><title><![CDATA[node-promise]]></title><description><![CDATA[<h1>promise module</h1>
+<pre class="code" data-js="step/test-step2.js"></pre>]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=step.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=step.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 03:46:37 GMT</pubDate></item><item><title><![CDATA[node-promise]]></title><description><![CDATA[<h1>promise module</h1>
 <p>promise模組是Node.js使用來達成循序操縱的一個方式，不過...說實在的，這個套件我還不是很懂他的操作方式，下面列出的範例，大家可以參考就好，</p>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="promise" data-show="version,dependencies"></div>
@@ -403,8 +403,8 @@ System.out.println(&#39;HELLO!&#39;);</code></pre>
 <pre><code>&gt;&gt;1
 &gt;&gt;2
 &lt;!doctype html&gt;&lt;html itemscope=&quot;itemscope&quot; itemtyp</code></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=node-promise.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=node-promise.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 03:17:40 GMT</pubDate></item><item><title><![CDATA[q]]></title><description><![CDATA[<h1>q</h1>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=q.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=q.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Sat, 25 May 2013 05:39:35 GMT</pubDate></item><item><title><![CDATA[Express]]></title><description><![CDATA[<h1>Express</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=node-promise.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=node-promise.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 03:17:40 GMT</pubDate></item><item><title><![CDATA[q]]></title><description><![CDATA[<h1>q</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=q.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=q.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Sat, 25 May 2013 05:39:35 GMT</pubDate></item><item><title><![CDATA[Express]]></title><description><![CDATA[<h1>Express</h1>
 <p>Express是一套Node.js的Web Framework，以EJS或Jade(或其他)為View Engine將Node.js的MVC做一個完整的封裝，學Node.js的朋友不能錯過！</p>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="express" data-show="version,dependencies"></div>
@@ -503,7 +503,7 @@ app.register(&quot;html&quot;, ejs);</code></pre>
 <ul>
 <li>檢視執行狀況： <a href="http://localhost:3000">http://localhost:3000</a></li>
 </ul>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=Express.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=Express.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Tue, 21 May 2013 02:01:38 GMT</pubDate></item><item><title><![CDATA[domain]]></title><description><![CDATA[<h1>domain</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=Express.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=Express.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Tue, 21 May 2013 02:01:38 GMT</pubDate></item><item><title><![CDATA[domain]]></title><description><![CDATA[<h1>domain</h1>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="domain" data-show="version,dependencies"></div>
 
@@ -511,7 +511,7 @@ app.register(&quot;html&quot;, ejs);</code></pre>
 <h2>Github Repository</h2>
 <p><a href="htps:////github.com/brighthas/node-cqrs.git">NPM Repository資訊</a></p>
 <h2>Sample</h2>
-<pre class="code" data-js="domain/domainExample.js"></pre>]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=domain.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=domain.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 05:06:39 GMT</pubDate></item><item><title><![CDATA[native-dns]]></title><description><![CDATA[<h1>native-dns</h1>
+<pre class="code" data-js="domain/domainExample.js"></pre>]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=domain.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=domain.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 05:06:39 GMT</pubDate></item><item><title><![CDATA[native-dns]]></title><description><![CDATA[<h1>native-dns</h1>
 <p>想建立一套強韌的DNS系統嗎，用Node.js也可以喔！native-dns是一個實作dns協定的工具包，提供你呼叫dns server以及當做dns server的方式，透過此套件，寫一個dns server是輕而易舉的事喔！</p>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="native-dns" data-show="version,dependencies"></div>
@@ -520,7 +520,7 @@ app.register(&quot;html&quot;, ejs);</code></pre>
 <pre><code>npm install native-dns</code></pre>
 <h2>Sample Usage</h2>
 <pre class="code" data-js="native-dns/sample01.js"></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=native-dns.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=native-dns.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 05:21:08 GMT</pubDate></item><item><title><![CDATA[nodemailer]]></title><description><![CDATA[<h1>nodemailer</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=native-dns.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=native-dns.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 05:21:08 GMT</pubDate></item><item><title><![CDATA[nodemailer]]></title><description><![CDATA[<h1>nodemailer</h1>
 <p>nodemailer</p>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="nodemailer" data-show="version,dependencies"></div>
@@ -535,7 +535,7 @@ app.register(&quot;html&quot;, ejs);</code></pre>
 <pre class="code" data-js="nodemailer/test-nmail.js"></pre>
 
 <p>樣板；</p>
-<pre class="code" data-js="nodemailer/test-nmail.tpl"></pre>]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=nodemailer.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=nodemailer.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 05:32:07 GMT</pubDate></item><item><title><![CDATA[json]]></title><description><![CDATA[<h1>json</h1>
+<pre class="code" data-js="nodemailer/test-nmail.tpl"></pre>]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=nodemailer.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=nodemailer.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 05:32:07 GMT</pubDate></item><item><title><![CDATA[json]]></title><description><![CDATA[<h1>json</h1>
 <h2>說明</h2>
 <p>提供指令列模式操作json的排版及物件操作方式</p>
 <h2>Github Repository</h2>
@@ -619,7 +619,7 @@ app.register(&quot;html&quot;, ejs);</code></pre>
     }
   ]
 }</code></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=json.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=json.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 02:53:32 GMT</pubDate></item><item><title><![CDATA[underscore]]></title><description><![CDATA[<h1>underscore module</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=json.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=json.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 02:53:32 GMT</pubDate></item><item><title><![CDATA[underscore]]></title><description><![CDATA[<h1>underscore module</h1>
 <p>相當完整的工具包，包含有常用的Collection, Array, Function, Object...的操作，而且可以是用於前端js，熟悉他的話，開發工作可以事半功倍喔！</p>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="underscore" data-show="version,dependencies"></div>
@@ -628,7 +628,7 @@ app.register(&quot;html&quot;, ejs);</code></pre>
 <pre><code>npm install underscore</code></pre>
 <h2>Sample Usage</h2>
 <p>參考官網文件：<a href="http://underscorejs.org/">http://underscorejs.org/</a></p>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=underscore.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=underscore.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 03:47:59 GMT</pubDate></item><item><title><![CDATA[node-uuid]]></title><description><![CDATA[<h1>node-uuid</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=underscore.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=underscore.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 03:47:59 GMT</pubDate></item><item><title><![CDATA[node-uuid]]></title><description><![CDATA[<h1>node-uuid</h1>
 <p>Node.js套件中，幫忙產生類似&#39;02a2ce90-1432-11e1-8558-0b488e4fc115&#39;這樣字串的工具，提供兩種產生方式：1.時間序列方式產出，2.亂數產出。</p>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="node-uuid" data-show="version,dependencies"></div>
@@ -640,7 +640,7 @@ app.register(&quot;html&quot;, ejs);</code></pre>
 <pre class="code" data-js="node-uuid/sample01.js"></pre>
 
 <p>可以針對建立的過程添加一些參數，讓亂數...更亂一些...</p>
-<pre class="code" data-js="node-uuid/sample02.js"></pre>]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=node-uuid.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=node-uuid.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 08:56:56 GMT</pubDate></item><item><title><![CDATA[noder]]></title><description><![CDATA[<h1>noder</h1>
+<pre class="code" data-js="node-uuid/sample02.js"></pre>]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=node-uuid.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=node-uuid.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 08:56:56 GMT</pubDate></item><item><title><![CDATA[noder]]></title><description><![CDATA[<h1>noder</h1>
 <p>noder是一套簡易的HTTP Server，透過指令列啟動該服務後，執行之資料夾以下的檔案則可以透過HTTP的方式存取，可以當做測試HTML, CSS時使用。</p>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="noder" data-show="version,dependencies"></div>
@@ -667,7 +667,7 @@ app.register(&quot;html&quot;, ejs);</code></pre>
 [2013-05-22 18:34:09.639] [INFO] [default] - Noder version: 0.0.7
 [2013-05-22 18:34:09.641] [INFO] [default] - Server running at http://127.0.0.1:1337/
 [2013-05-22 18:34:09.642] [INFO] [default] - Using log level: INFO (If you want to change, try &quot;export LOV_LEVEL=INFO&quot; in linux or &quot;set LOG_LEVEL=INFO&quot; in windows)</code></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=noder.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=noder.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 10:37:51 GMT</pubDate></item><item><title><![CDATA[commander]]></title><description><![CDATA[<h1>commander</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=noder.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=noder.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 10:37:51 GMT</pubDate></item><item><title><![CDATA[commander]]></title><description><![CDATA[<h1>commander</h1>
 <p>commander是一套讓建立Node.js CLI(Command Line Interface)更快速的方法，讓使用者可以更快速且更彈性的抓取command line的參數，也提供預設的help page，讓需要寫指令模式的開發者更方便！</p>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="commander" data-show="version,dependencies,repository"></div>
@@ -686,7 +686,7 @@ you ordered a pizza with:
 you ordered a pizza with:
   - pineappe
   - marble cheese</code></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=commander.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=commander.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 05:05:01 GMT</pubDate></item><item><title><![CDATA[cradle]]></title><description><![CDATA[<h1>cradle</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=commander.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=commander.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 05:05:01 GMT</pubDate></item><item><title><![CDATA[cradle]]></title><description><![CDATA[<h1>cradle</h1>
 <p>cradle是一套Apache準備給CouchDB的Node.js套件，透過該套件可以直接完全的存取CouchDB上的資源。</p>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="cradle" data-show="version,dependencies"></div>
@@ -702,7 +702,7 @@ you ordered a pizza with:
 <p>執行範例：</p>
 <p>執行test code的方法如下，注意：參數部分直接輸入test.js中script的key值即可(代表取出該值代表的function做執行的動作)</p>
 <pre><code># node examples/cradle/test.js c1</code></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=cradle.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=cradle.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Tue, 21 May 2013 01:23:00 GMT</pubDate></item><item><title><![CDATA[riak-js]]></title><description><![CDATA[<h1>riak-js</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=cradle.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=cradle.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Tue, 21 May 2013 01:23:00 GMT</pubDate></item><item><title><![CDATA[riak-js]]></title><description><![CDATA[<h1>riak-js</h1>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="riak-js" data-show="version,dependencies"></div>
 
@@ -740,7 +740,7 @@ make rel</code></pre>
        key: &#39;KLM2&#39;,
        vclock: &#39;a85hYGBgzGDKBVIcypz/fvoLt6/KYEpkzGNl+KzecYIvCwA=&#39; },
     data: { fleet: 111, country: &#39;NL&#39; } } ]</code></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=riak-js.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=riak-js.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 08:45:24 GMT</pubDate></item><item><title><![CDATA[mysql]]></title><description><![CDATA[<h1>MySQL</h1>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=riak-js.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=riak-js.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 08:45:24 GMT</pubDate></item><item><title><![CDATA[mysql]]></title><description><![CDATA[<h1>MySQL</h1>
 <h2>簡介</h2>
 <p>非常常用的套件，也是簡單易懂... 連線＋查詢...解決</p>
 <h2>Installation</h2>
@@ -750,7 +750,7 @@ make rel</code></pre>
 <pre class="code" data-js="mysql/mysql-config.js"></pre>
 
 <p>而任何的SQL在此套件內都是使用query這個function即可達成，作者封裝insert, update, delete, select甚至exec等指令到同一個function，讓操作相當簡單...</p>
-<pre class="code" data-js="mysql/mysql-example.js"></pre>]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=mysql.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=mysql.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 02:53:32 GMT</pubDate></item><item><title><![CDATA[smartdc]]></title><description><![CDATA[<h1>smartdc module</h1>
+<pre class="code" data-js="mysql/mysql-example.js"></pre>]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=mysql.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=mysql.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Mon, 20 May 2013 02:53:32 GMT</pubDate></item><item><title><![CDATA[smartdc]]></title><description><![CDATA[<h1>smartdc module</h1>
 <p>smartdc是一套Joyent原廠提供連線Joyent Cloud Platform - SmartDataCenter的套件，裡面提供CLI與node.js的操作方法，可以直接與cloudapi進行溝通，並且達到管理cloud machine相關的動作。</p>
 <h2>套件資訊</h2>
 <div class="pkginfo" data-module-name="smartdc" data-show="version,dependencies"></div>
@@ -774,4 +774,4 @@ sdc-describeanalytics         sdc-listkeys</code></pre>
 <p>關於smartdc官方的文件，請參考：<a href="http://sdcdoc.joyent.com/sdcdoc/display/sdc/API+Documentation">http://sdcdoc.joyent.com/sdcdoc/display/sdc/API+Documentation</a></p>
 <h2>Sample Usage</h2>
 <pre class="code" data-js="smartdc/test-smartdc.js"></pre>
-]]></description><link>http://peihsinsu.github.io/opennodes/index.html?page=smartdc.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/index.html?page=smartdc.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 08:30:07 GMT</pubDate></item></channel></rss>
+]]></description><link>http://peihsinsu.github.io/opennodes/wiki/index.html?page=smartdc.md</link><guid isPermaLink="false">http://peihsinsu.github.io/opennodes/wiki/index.html?page=smartdc.md</guid><dc:creator><![CDATA[Opennodes]]></dc:creator><pubDate>Wed, 22 May 2013 08:30:07 GMT</pubDate></item></channel></rss>
