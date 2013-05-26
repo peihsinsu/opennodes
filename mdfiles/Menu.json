@@ -2,82 +2,82 @@
   { "name": "Node.js基礎介紹",
     "type": "folder",
     "nodes":[
-      {"type":"node","link":"index.html?page=BasicNodeJS.md","name":"Node.js入門"},
-      {"type":"node","link":"index.html?page=BasicOperation.md","name":"迴圈與判斷"},
-      {"type":"node","link":"index.html?page=NodeJSEnv.md","name":"Node.js與環境"},
-      {"type":"node","link":"index.html?page=AboutIO.md","name":"FileSystem"},
-      {"type":"node","link":"index.html?page=CmdExec.md","name":"Exec"},
-      {"type":"node","link":"index.html?page=SocketProgramming.md","name":"Socket"},
-      {"type":"node","link":"index.html?page=REPL.md","name":"REPL"},
-      {"type":"node","link":"index.html?page=Closure.md","name":"Closure"},
-      {"type":"node","link":"index.html?page=JsonOperate.md","name":"JSON操作"},
-      {"type":"node","link":"index.html?page=NodeJSResource.md","name":"學習資源介紹"}
+      {"type":"node","link":"BasicNodeJS.md","name":"Node.js入門"},
+      {"type":"node","link":"BasicOperation.md","name":"迴圈與判斷"},
+      {"type":"node","link":"NodeJSEnv.md","name":"Node.js與環境"},
+      {"type":"node","link":"AboutIO.md","name":"FileSystem"},
+      {"type":"node","link":"CmdExec.md","name":"Exec"},
+      {"type":"node","link":"SocketProgramming.md","name":"Socket"},
+      {"type":"node","link":"REPL.md","name":"REPL"},
+      {"type":"node","link":"Closure.md","name":"Closure"},
+      {"type":"node","link":"JsonOperate.md","name":"JSON操作"},
+      {"type":"node","link":"NodeJSResource.md","name":"學習資源介紹"}
     ]
   },
   { "name": "HTTP(S) Modules",
     "type": "folder",
     "nodes":[
-      {"type":"node","link":"index.html?page=request.md","name":"request"},
-      {"type":"node","link":"index.html?page=restify.md","name":"restify"},
-      {"type":"node","link":"index.html?page=restClient.md","name":"restClient"},
-      {"type":"node","link":"index.html?page=connect.md","name":"connect"},
-      {"type":"node","link":"index.html?page=soap.md","name":"soap"}
+      {"type":"node","link":"request.md","name":"request"},
+      {"type":"node","link":"restify.md","name":"restify"},
+      {"type":"node","link":"restClient.md","name":"restClient"},
+      {"type":"node","link":"connect.md","name":"connect"},
+      {"type":"node","link":"soap.md","name":"soap"}
     ]
   },
   { "name": "Async Modules",
     "type": "folder",
     "nodes":[
-      {"type":"node","link":"index.html?page=step.md","name":"step"},
-      {"type":"node","link":"index.html?page=node-promise.md","name":"node-promise"},
-      {"type":"node","link":"index.html?page=q.md","name":"q"}
+      {"type":"node","link":"step.md","name":"step"},
+      {"type":"node","link":"node-promise.md","name":"node-promise"},
+      {"type":"node","link":"q.md","name":"q"}
     ]
   },
   { "name": "Web Framework",
     "type": "folder",
     "nodes":[
-      {"type":"node","link":"index.html?page=Express.md","name":"Express"}
+      {"type":"node","link":"Express.md","name":"Express"}
     ]
   },
   { "name": "Network",
     "type": "folder",
     "nodes":[
-      {"type":"node","link":"index.html?page=domain.md","name":"domain"},
-      {"type":"node","link":"index.html?page=native-dns.md","name":"native-dns"},
-      {"type":"node","link":"index.html?page=nodemailer.md","name":"nodemailer"}
+      {"type":"node","link":"domain.md","name":"domain"},
+      {"type":"node","link":"native-dns.md","name":"native-dns"},
+      {"type":"node","link":"nodemailer.md","name":"nodemailer"}
     ]
   },
   { "name": "Utility",
     "type": "folder",
     "nodes":[
-      {"type":"node","link":"index.html?page=json.md","name":"json"},
-      {"type":"node","link":"index.html?page=underscore.md","name":"underscore"},
-      {"type":"node","link":"index.html?page=node-uuid.md","name":"node-uuid"},
-      {"type":"node","link":"index.html?page=noder.md","name":"noder"}
+      {"type":"node","link":"json.md","name":"json"},
+      {"type":"node","link":"underscore.md","name":"underscore"},
+      {"type":"node","link":"node-uuid.md","name":"node-uuid"},
+      {"type":"node","link":"noder.md","name":"noder"}
     ]
   },
   { "name": "CLI tools",
     "type": "folder",
     "nodes":[
-      {"type":"node","link":"index.html?page=commander.md","name":"commander"}
+      {"type":"node","link":"commander.md","name":"commander"}
     ]
   },
   { "name": "NoSQL",
     "type": "folder",
     "nodes":[
-      {"type":"node","link":"index.html?page=cradle.md","name":"cradle"},
-      {"type":"node","link":"index.html?page=riak-js.md","name":"riak-js"}
+      {"type":"node","link":"cradle.md","name":"cradle"},
+      {"type":"node","link":"riak-js.md","name":"riak-js"}
     ]
   },
   { "name": "MySQL",
     "type": "folder",
     "nodes":[
-      {"type":"node","link":"index.html?page=mysql.md","name":"mysql"}
+      {"type":"node","link":"mysql.md","name":"mysql"}
     ]
   },
   { "name": "CloudAPI",
     "type": "folder",
     "nodes":[
-      {"type":"node","link":"index.html?page=smartdc.md","name":"smartdc"}
+      {"type":"node","link":"smartdc.md","name":"smartdc"}
     ]
   }
 ]

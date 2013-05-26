@@ -19,7 +19,7 @@ for(var i = 0 ; i < arr.length ; i++ ) {
     html += util.format('<p>%s<br/>',_this.name);
     for(var j = 0 ; j < _this.nodes.length ; j++ ) {
       var _nodes = _this.nodes[j];
-      html += util.format('<small>[%s](%s)</small>,', _nodes.name, _nodes.link);
+      html += util.format('<small>[%s](index.html?page=%s)</small>,', _nodes.name, _nodes.link);
     }
     html += '<br/></p>\n\n';
   }
