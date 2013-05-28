@@ -1,6 +1,6 @@
 $(document).ready(function(){
   
-  $.getJSON('/mdfiles/Menu.json', function(arr){
+  $.getJSON('../mdfiles/Menu.json', function(arr){
     var html = '* [GitHub](https://github.com/peihsinsu/opennodes)\n';
     html += '* [Node.js](http://nodejs.org)\n';
     html += '* [About Me](http://about.me/peihsinsu)\n\n';
