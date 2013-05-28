@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+  //To get the json and parse to the menu structure
   $.getJSON('../mdfiles/Menu.json', function(arr){
     var html = '* [GitHub](https://github.com/peihsinsu/opennodes)\n';
     html += '* [Node.js](http://nodejs.org)\n';
