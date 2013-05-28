@@ -52,7 +52,8 @@
       {"type":"node","link":"json.md","name":"json"},
       {"type":"node","link":"underscore.md","name":"underscore"},
       {"type":"node","link":"node-uuid.md","name":"node-uuid"},
-      {"type":"node","link":"noder.md","name":"noder"}
+      {"type":"node","link":"noder.md","name":"noder"},
+      {"type":"node","link":"ttyjs.md","name":"tty.js"}
     ]
   },
   { "name": "CLI tools",

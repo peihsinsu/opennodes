@@ -1,9 +1,9 @@
 $(document).ready(function(){
-  
+  /* Remove to load from menu.js
   $('#md_menu').load(config.md_file_path + '/' + config.menu_page, function(){
     $('#menu').html(htmlUnescape(marked($('#md_menu').html()), mkdOpt));  
   });
-
+  */
   var p = getURLParameter('page');
   
   if(p && getURLParameter('page').split('#')[0]) {
